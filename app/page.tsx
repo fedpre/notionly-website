@@ -64,7 +64,7 @@ export default function Home() {
         </a>
 
         <a
-          href="#"
+          href="mailto: fed.pregnolato@gmail.com"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
@@ -73,7 +73,7 @@ export default function Home() {
             Contacts <span>-&gt;</span>
           </h2>
           <p className={inter.className}>
-            Get in touch with us.
+            Get in touch with us. Today.
           </p>
         </a>
       </div>
