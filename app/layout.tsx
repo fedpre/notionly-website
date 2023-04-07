@@ -1,9 +1,11 @@
-import './globals.css'
+'use client'
+import { CacheProvider } from '@chakra-ui/next-js'
+import { ChakraProvider } from '@chakra-ui/react'
 
-export const metadata = {
-  title: 'Notionly',
-  description: 'Unleash the power of Notion',
-}
+// export const metadata = {
+//   title: 'Notionly',
+//   description: 'Unleash the power of Notion',
+// }
 
 export default function RootLayout({
   children,
@@ -12,7 +14,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <CacheProvider>
+          <ChakraProvider>
+            {children}
+          </ChakraProvider>
+        </CacheProvider>
+      </body>
     </html>
   )
 }
