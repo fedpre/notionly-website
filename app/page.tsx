@@ -1,12 +1,12 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+'use client'
 
-const inter = Inter({ subsets: ['latin'] })
+import Hero from "@/components/Hero"
+import { Box } from "@chakra-ui/react"
 
 export default function Home() {
   return (
-    <>
-      <h1>Hello world</h1>
-    </>
+    <Box>
+      <Hero />
+    </Box>
   )
 }

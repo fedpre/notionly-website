@@ -1,6 +1,7 @@
 'use client'
+import Nav from '@/components/Nav'
 import { CacheProvider } from '@chakra-ui/next-js'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, Container } from '@chakra-ui/react'
 
 // export const metadata = {
 //   title: 'Notionly',
@@ -17,7 +18,10 @@ export default function RootLayout({
       <body>
         <CacheProvider>
           <ChakraProvider>
-            {children}
+            <Container maxW='6xl'>
+              <Nav />
+              {children}
+            </Container>
           </ChakraProvider>
         </CacheProvider>
       </body>
