@@ -57,7 +57,8 @@ export default function Hero() {
           <HStack py={5}>
             <Link as={NextLink} href="/service">
               <Button
-                colorScheme="teal"
+                colorScheme="purple"
+                boxShadow='xl'
                 size="lg"
                 marginRight={5}
                 rightIcon={<ChevronRightIcon boxSize={8} />}
@@ -66,7 +67,7 @@ export default function Hero() {
               </Button>
             </Link>
             <Link as={NextLink} href="/templates">
-              <Button size="lg" rightIcon={<ChevronRightIcon boxSize={8} />}>
+              <Button size="lg" boxShadow='xl' rightIcon={<ChevronRightIcon boxSize={8} />} >
                 Notion Templates
               </Button>
             </Link>

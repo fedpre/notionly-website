@@ -44,7 +44,7 @@ export default function Nav() {
             </Box>
             <Box>
               <IconButton
-                colorScheme="teal"
+                colorScheme="purple"
                 variant="ghost"
                 aria-label="toggle light and dark mode"
                 size="md"
