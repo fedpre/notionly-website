@@ -1,7 +1,8 @@
 'use client';
 import Nav from '@/components/Nav';
 import { CacheProvider } from '@chakra-ui/next-js';
-import { ChakraProvider, Container } from '@chakra-ui/react';
+import { ChakraProvider, ColorModeScript, Container } from '@chakra-ui/react';
+import theme from './theme';
 
 // export const metadata = {
 //   title: 'Notionly',
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body>
         <CacheProvider>
           <ChakraProvider>
+          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
             <Container maxW="6xl">
               <Nav />
               {children}

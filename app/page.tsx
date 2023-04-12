@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Box>
       <Hero />
-      <RelevantTemplate title="Notion Finance Tracker" description="The best way to keep track of your finances. All in Notion." imageUrl="/finance_1.jpg" />
+      <RelevantTemplate title="Notion Finance Tracker" description="The best way to keep track of your finances. All in Notion." imageUrl="/finance_1.jpg" templatePageLink="/templates/finance-tracker" />
     </Box>
   )
 }
