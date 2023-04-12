@@ -105,6 +105,7 @@ export default function Hero() {
         </VStack>
         <Image
           src="smile_blueshirt.jpg"
+          boxShadow="xl"
           w={500}
           objectFit="cover"
           alt="federico picture"
