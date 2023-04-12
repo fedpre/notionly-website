@@ -3,7 +3,6 @@ import {
   Box,
   useColorMode,
   useColorModeValue,
-  Text,
   HStack,
   Flex,
   Spacer,
@@ -11,13 +10,14 @@ import {
   Link,
   useDisclosure,
 } from '@chakra-ui/react';
-import { CloseIcon, HamburgerIcon, MoonIcon } from '@chakra-ui/icons';
+import { MoonIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
+import HamburgerNav from './HamburgerNav';
+import NavElement from './NavElement';
 
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onToggle } = useDisclosure();
-  const bg = useColorModeValue('gray.200', 'blackalpha.50');
   const text = useColorModeValue('blackAlpha.700', '');
 
   return (
@@ -30,41 +30,17 @@ export default function Nav() {
           <Spacer />
           <HStack spacing={6}>
             <Box display={{ base: 'none', md: 'flex' }} gap={10}>
-              <Box >
-                <Link as={NextLink} href="/service">
-                  Service
-                </Link>
-              </Box>
-              <Box>
-                <Link as={NextLink} href="/templates">
-                  Templates
-                </Link>
-              </Box>
-              <Box>
-                <Link as={NextLink} href="/contacts">
-                  Contacts
-                </Link>
-              </Box>
+              <NavElement href='/service' text='Service' />
+              <NavElement href='/templates' text='Templates' />
+              <NavElement href='/contacts' text='Contacts' />
             </Box>
             <Box>
               <Flex
-                  flex={{ base: 1, md: 'auto' }}
-                  ml={{ base: -2 }}
-                  display={{ base: 'flex', md: 'none' }}
-                >
-                  <IconButton
-                    onClick={onToggle}
-                    icon={
-                      isOpen ? (
-                        <CloseIcon w={3} h={3} />
-                      ) : (
-                        <HamburgerIcon w={5} h={5} />
-                      )
-                    }
-                    variant={'ghost'}
-                    aria-label={'Toggle Navigation'}
-                  />
-                </Flex>
+                flex={{ base: 1, md: 'auto' }}
+                display={{ base: 'flex', md: 'none' }}
+              >
+                <HamburgerNav />
+              </Flex>
             </Box>
             <Box>
               <IconButton
