@@ -11,15 +11,15 @@ import {
 import NextLink from 'next/link';
 
 export default function HamburgerNav() {
-  const { isOpen, onToggle } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Menu>
+    <Menu onClose={onClose}>
       <MenuButton
         as={IconButton}
         aria-label="Options"
         icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
         variant="outline"
-        onClick={() => onToggle()}
+        onClick={onOpen}
       />
       <MenuList>
         <MenuItem>

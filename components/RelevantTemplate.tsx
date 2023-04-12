@@ -1,13 +1,15 @@
 import { DownloadIcon } from '@chakra-ui/icons';
-import { Flex, Heading, VStack, Text, Image, Box, Button } from '@chakra-ui/react';
+import { Heading, VStack, Text, Image, Box, Button } from '@chakra-ui/react';
+import NextLink from 'next/link'
 
 interface Props {
   title: string;
   description: string;
   imageUrl: string;
+  templatePageLink: string;
 }
 
-export default function RelevantTemplate({ title, description, imageUrl}: Props) {
+export default function RelevantTemplate({ title, description, imageUrl, templatePageLink}: Props) {
   return (
     <>
         <VStack
@@ -37,9 +39,11 @@ export default function RelevantTemplate({ title, description, imageUrl}: Props)
               boxShadow='xl'
               borderRadius={10}
             />
-          <Button size='lg' colorScheme='purple' px={20} py={7} rightIcon={<DownloadIcon boxSize={5}/>} boxShadow='xl'>
-            Get it now!
-          </Button>
+            <NextLink href={templatePageLink}>
+              <Button size='lg' colorScheme='purple' px={20} py={7} rightIcon={<DownloadIcon boxSize={5}/>} boxShadow='xl'>
+                Get it now!
+              </Button>
+            </NextLink>
         </VStack>
     </>
   );
