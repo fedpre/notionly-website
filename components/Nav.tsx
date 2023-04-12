@@ -28,7 +28,7 @@ export default function Nav() {
             <Link href="/">Logo</Link>
           </Box>
           <Spacer />
-          <HStack spacing={6}>
+          <HStack>
             <Box display={{ base: 'none', md: 'flex' }} gap={10}>
               <NavElement href='/service' text='Service' />
               <NavElement href='/templates' text='Templates' />

@@ -28,6 +28,7 @@ export default function Hero() {
         }}
       >
         <VStack
+          maxW="full"
           alignItems={{
             base: 'center',
             md: 'flex-start',
@@ -45,20 +46,44 @@ export default function Hero() {
             size="4xl"
             textAlign={{ base: 'center', md: 'left' }}
           >
-            I am Federico.
+            It&apos;s Federico.
           </Heading>
-          <Text fontSize="2xl" py={5}>
+          <Text
+            fontSize="2xl"
+            py={5}
+            textAlign={{ base: 'center', md: 'left' }}
+          >
             I&apos;m a software engineer, YouTuber, and Notion architect.
           </Text>
-          <Text fontSize="2xl" py={5}>
+          <Text
+            fontSize="2xl"
+            py={5}
+            textAlign={{ base: 'center', md: 'left' }}
+          >
             I help businesses create systems to increase productivity. Also, I
             create awesome templates in Notion!
           </Text>
-          <HStack py={5}>
+          <Flex
+            py={5}
+            direction={{
+              base: 'column',
+              md: 'row',
+            }}
+            justifyContent="center"
+            alignItems={{
+              base: 'flex-start',
+              md: 'center',
+            }}
+            gap={{
+              base: 6,
+              md: 0,
+            }}
+          >
             <Link as={NextLink} href="/service">
               <Button
                 colorScheme="purple"
-                boxShadow='xl'
+                w={250}
+                boxShadow="xl"
                 size="lg"
                 marginRight={5}
                 rightIcon={<ChevronRightIcon boxSize={8} />}
@@ -67,11 +92,16 @@ export default function Hero() {
               </Button>
             </Link>
             <Link as={NextLink} href="/templates">
-              <Button size="lg" boxShadow='xl' rightIcon={<ChevronRightIcon boxSize={8} />} >
+              <Button
+                size="lg"
+                w={250}
+                boxShadow="xl"
+                rightIcon={<ChevronRightIcon boxSize={8} />}
+              >
                 Notion Templates
               </Button>
             </Link>
-          </HStack>
+          </Flex>
         </VStack>
         <Image
           src="smile_blueshirt.jpg"
