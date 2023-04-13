@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Jake Z.",
+    "review": "Lorem ipsum dolor sit amet",
+    "star": 5
+  },
+  {
+    "name": "Lara W.",
+    "review": "Lorem ipsum dolor sit amet",
+    "star": 5
+  }
+]
