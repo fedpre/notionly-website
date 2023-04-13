@@ -3,6 +3,7 @@ import Nav from '@/components/Nav';
 import { CacheProvider } from '@chakra-ui/next-js';
 import { ChakraProvider, ColorModeScript, Container } from '@chakra-ui/react';
 import theme from './theme';
+import Footer from '@/components/Footer';
 
 // export const metadata = {
 //   title: 'Notionly',
@@ -24,6 +25,7 @@ export default function RootLayout({
               <Nav />
               {children}
             </Container>
+            <Footer />
           </ChakraProvider>
         </CacheProvider>
       </body>
