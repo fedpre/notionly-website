@@ -1,5 +1,6 @@
 'use client'
 
+import Footer from "@/components/Footer"
 import Hero from "@/components/Hero"
 import RelevantTemplate from "@/components/RelevantTemplate"
 import { Box } from "@chakra-ui/react"
