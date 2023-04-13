@@ -7,9 +7,11 @@ interface FeatureProps {
   title: string;
   text: string;
   icon: ReactElement;
+  bgColor: string;
+  color: string;
 }
 
-export default function Feature({ title, text, icon }: FeatureProps) {
+export default function Feature({ title, text, icon, bgColor, color }: FeatureProps) {
   return (
     <Stack>
       <Flex
@@ -17,16 +19,16 @@ export default function Feature({ title, text, icon }: FeatureProps) {
         h={16}
         align={'center'}
         justify={'center'}
-        color={'white'}
-        rounded={'full'}
-        bg={'gray.100'}
+        color={color}
+        rounded={'2xl'}
+        bg={bgColor}
         mb={1}
         boxShadow='xl'
         >
         {icon}
       </Flex>
       <Text fontWeight={600}>{title}</Text>
-      <Text color={'gray.500'}>{text}</Text>
+      <Text color={'gray.400'}>{text}</Text>
     </Stack>
   )
 }

@@ -74,7 +74,7 @@ export default function LargeWithNewsletter() {
                 //   bg: 'green.600',
                 // }}
                 aria-label="Subscribe"
-                icon={<BiMailSend />}
+                icon={<BiMailSend color={useColorModeValue("#D6BCFA", "#6B46C1")} />}
               />
             </Stack>
           </Stack>
