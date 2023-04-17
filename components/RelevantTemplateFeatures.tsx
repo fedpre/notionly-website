@@ -1,5 +1,5 @@
 'use client'
-import { Box, Icon, SimpleGrid, useColorModeValue } from "@chakra-ui/react"
+import { Box, Icon, SimpleGrid, useColorModeValue } from "./ChakraUIComponents"
 import { BsCashStack } from "react-icons/bs";
 import { IoStatsChartOutline } from "react-icons/io5";
 import { MdOutlineDashboardCustomize } from "react-icons/md";

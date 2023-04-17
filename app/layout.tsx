@@ -1,33 +1,18 @@
-'use client';
-import Nav from '@/components/Nav';
-import { CacheProvider } from '@chakra-ui/next-js';
-import { ChakraProvider, ColorModeScript, Container } from '@chakra-ui/react';
-import theme from './theme';
-import Footer from '@/components/Footer';
+import { Metadata } from 'next';
+import App from '@/components/App';
 
-// export const metadata = {
-//   title: 'Notionly',
-//   description: 'Unleash the power of Notion',
-// };
+export const metadata: Metadata = {
+  title: 'Notionly | Home',
+  description: 'Unleash the power of Notion',
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <CacheProvider>
-          <ChakraProvider>
-          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-            <Container maxW="6xl">
-              <Nav />
-              {children}
-            </Container>
-            <Footer />
-          </ChakraProvider>
-        </CacheProvider>
+        <App>
+          { children }
+        </App>
       </body>
     </html>
   );

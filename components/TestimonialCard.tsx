@@ -11,8 +11,7 @@ import {
   Image,
   CardFooter,
   Button,
-} from '@chakra-ui/react';
-import { BiChat, BiLike, BiShare } from 'react-icons/bi';
+} from './ChakraUIComponents';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 
 export default function TestimonialCard() {

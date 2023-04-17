@@ -9,9 +9,8 @@ import {
   IconButton,
   Link,
   useDisclosure,
-} from '@chakra-ui/react';
-import { MoonIcon } from '@chakra-ui/icons';
-import NextLink from 'next/link';
+  MoonIcon
+} from './ChakraUIComponents';
 import HamburgerNav from './HamburgerNav';
 import NavElement from './NavElement';
 

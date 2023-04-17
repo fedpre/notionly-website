@@ -1,10 +1,8 @@
-'use client'
-
-import Footer from "@/components/Footer"
+import { Box } from "@/components/ChakraUIComponents"
 import Hero from "@/components/Hero"
 import RelevantTemplate from "@/components/RelevantTemplate"
 import Testimonials from "@/components/Testimonials"
-import { Box } from "@chakra-ui/react"
+
 
 export default function Home() {
   return (

@@ -1,4 +1,4 @@
-import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
+import { CloseIcon, HamburgerIcon } from './ChakraUIComponents';
 import {
   IconButton,
   Link,
@@ -7,7 +7,7 @@ import {
   MenuItem,
   MenuList,
   useDisclosure,
-} from '@chakra-ui/react';
+} from './ChakraUIComponents';
 import NextLink from 'next/link';
 
 export default function HamburgerNav() {

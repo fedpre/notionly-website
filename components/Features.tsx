@@ -1,7 +1,5 @@
-'use client'
-
-import { Flex, Stack, Text } from "@chakra-ui/react";
 import { ReactElement } from "react";
+import { Flex, Stack, Text } from "./ChakraUIComponents";
 
 interface FeatureProps {
   title: string;
