@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, SimpleGrid, Text } from '@chakra-ui/react';
+import { Box, Heading, SimpleGrid } from './ChakraUIComponents';
 import TestimonialCard from './TestimonialCard';
 
 export default function Testimonials() {

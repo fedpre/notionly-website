@@ -1,13 +1,12 @@
-import { DownloadIcon } from '@chakra-ui/icons';
+import { DownloadIcon } from './ChakraUIComponents';
 import {
   Heading,
   VStack,
   Text,
   Image,
-  Box,
   Button,
   Flex,
-} from '@chakra-ui/react';
+} from './ChakraUIComponents';
 import NextLink from 'next/link';
 import RelevantTemplateFeatures from './RelevantTemplateFeatures';
 

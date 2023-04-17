@@ -1,4 +1,4 @@
-import { VisuallyHidden, chakra, useColorModeValue } from "@chakra-ui/react";
+import { VisuallyHidden, chakra, useColorModeValue } from "./ChakraUIComponents";
 import { ReactNode } from "react";
 
 export default function SocialButton ({

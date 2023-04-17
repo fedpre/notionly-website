@@ -1,5 +1,4 @@
-'use client';
-import { ChevronRightIcon } from '@chakra-ui/icons';
+import { ChevronRightIcon } from './ChakraUIComponents';
 import {
   Text,
   Heading,
@@ -10,7 +9,7 @@ import {
   useBreakpointValue,
   Button,
   Link,
-} from '@chakra-ui/react';
+} from './ChakraUIComponents';
 
 import NextLink from 'next/link';
 

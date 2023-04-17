@@ -1,4 +1,4 @@
-import { Text } from '@chakra-ui/react'
+import { Text } from './ChakraUIComponents'
 import { ReactNode } from 'react';
 
 export default function ListHeader ({ children }: { children: ReactNode }) {
