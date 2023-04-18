@@ -15,7 +15,12 @@ const fetchTestimonials = async () => {
 };
 
 export default async function Testimonials() {
-  const testimonials = await fetchTestimonials();
+  let testimonials: TestimonialCardProps[] = [];
+  try {
+    testimonials = await fetchTestimonials();
+  } catch (e: unknown) {
+    if (e instanceof Error) console.log(e.message);
+  }
 
   return (
     <Box>
