@@ -27,7 +27,15 @@ export default async function Testimonials() {
       <Heading as="h3" size="xl" textAlign="center" py={10}>
         What People Are Saying
       </Heading>
-      <SimpleGrid columns={3} gap={5} alignItems="center" py={5}>
+      <SimpleGrid
+        columns={{
+          base: 1,
+          md: 3,
+        }}
+        gap={5}
+        alignItems="center"
+        py={5}
+      >
         {testimonials.map((data: TestimonialCardProps) => (
           <TestimonialCard
             key={data.name}
