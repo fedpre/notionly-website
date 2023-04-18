@@ -1,12 +1,23 @@
 [
   {
     "name": "Jake Z.",
-    "review": "Lorem ipsum dolor sit amet",
+    "jobTitle": "Creator, Notion",
+    "reviewContent": "Lorem ipsum dolor sit amet",
+    "avatarImgUrl" : "",
     "star": 5
   },
   {
-    "name": "Lara W.",
-    "review": "Lorem ipsum dolor sit amet",
+    "name": "Jane L.",
+    "jobTitle": "CEO, Company",
+    "reviewContent": "Lorem ipsum dolor sit amet",
+    "avatarImgUrl" : "",
+    "star": 5
+  },
+  {
+    "name": "Jane L.",
+    "jobTitle": "CEO, Company",
+    "reviewContent": "Lorem ipsum dolor sit amet",
+    "avatarImgUrl" : "",
     "star": 5
   }
 ]

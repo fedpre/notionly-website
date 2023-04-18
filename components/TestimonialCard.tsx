@@ -6,51 +6,55 @@ import {
   CardHeader,
   Flex,
   Heading,
-  IconButton,
   Text,
-  Image,
   CardFooter,
-  Button,
+  StarIcon,
 } from './ChakraUIComponents';
-import { BsThreeDotsVertical } from 'react-icons/bs';
 
-export default function TestimonialCard() {
+type TestimonialCardProps = {
+  name: string;
+  jobTitle: string;
+  reviewContent: string;
+  avatarImgUrl: string;
+  star: number;
+};
+
+export default function TestimonialCard({
+  name,
+  jobTitle,
+  reviewContent,
+  avatarImgUrl,
+  star,
+}: TestimonialCardProps) {
+  const getStars = (): React.ReactNode[] => {
+    const stars = [];
+    for (let i = 0; i < star; i++) {
+      stars.push(
+        <StarIcon key={i} mx={1} color={i < 5 ? 'yellow.400' : 'gray.300'} />
+      );
+    }
+    return stars;
+  };
+
   return (
     <Card maxW="sm" boxShadow={'lg'}>
       <CardHeader>
         <Flex>
           <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
-            <Avatar name="Segun Adebayo" src="https://bit.ly/sage-adebayo" />
+            <Avatar name={name} src={avatarImgUrl} />
             <Box>
-              <Heading size="sm">Segun Adebayo</Heading>
-              <Text>Creator, Chakra UI</Text>
+              <Heading size="sm">{name}</Heading>
+              <Text>{jobTitle}</Text>
             </Box>
           </Flex>
-          <IconButton
-            variant="ghost"
-            colorScheme="gray"
-            aria-label="See menu"
-            icon={<BsThreeDotsVertical />}
-          />
         </Flex>
       </CardHeader>
       <CardBody>
-        <Text>
-          With Chakra UI, I wanted to sync the speed of development with the
-          speed of design. I wanted the developer to be just as excited as the
-          designer to create a screen.
-        </Text>
+        <Text>{reviewContent}</Text>
       </CardBody>
-      <CardFooter
-        justify="space-between"
-        flexWrap="wrap"
-        sx={{
-          '& > button': {
-            minW: '136px',
-          },
-        }}
-      >
-
+      <CardFooter flexWrap="wrap">
+        {getStars().map((star) => star)}
+        <StarIcon color={'yellow.400'} />
       </CardFooter>
     </Card>
   );
