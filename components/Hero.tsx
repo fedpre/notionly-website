@@ -33,27 +33,51 @@ export default function Hero() {
             md: 'flex-start',
           }}
         >
-          <Heading
-            as="h1"
-            size="4xl"
-            textAlign={{ base: 'center', md: 'left' }}
+          <Flex
+            direction={{
+              base: 'column',
+              md: 'row',
+            }}
+            gap={10}
           >
-            Hey!
-          </Heading>
-          <Heading
-            as="h1"
-            size="4xl"
-            textAlign={{ base: 'center', md: 'left' }}
-          >
-            It&apos;s Federico.
-          </Heading>
-          <Text
-            fontSize="2xl"
-            py={5}
-            textAlign={{ base: 'center', md: 'left' }}
-          >
-            I&apos;m a software engineer, YouTuber, and Notion architect.
-          </Text>
+            <VStack
+              alignItems={{
+                base: 'center',
+                md: 'flex-start',
+              }}
+              justifyContent="center"
+            >
+              <Heading
+                as="h1"
+                size="4xl"
+                textAlign={{ base: 'center', md: 'left' }}
+              >
+                Hey!
+              </Heading>
+              <Heading
+                as="h1"
+                size="4xl"
+                textAlign={{ base: 'center', md: 'left' }}
+              >
+                It&apos;s Federico.
+              </Heading>
+              <Text
+                fontSize="2xl"
+                py={5}
+                textAlign={{ base: 'center', md: 'left' }}
+              >
+                I&apos;m a software engineer, YouTuber, and Notion architect.
+              </Text>
+            </VStack>
+            <Image
+              src="smile_blueshirt.jpg"
+              boxShadow="xl"
+              w={500}
+              objectFit="cover"
+              alt="federico picture"
+              borderRadius={20}
+            />
+          </Flex>
           <Text
             fontSize="3xl"
             py={5}
@@ -105,14 +129,6 @@ export default function Hero() {
             </Link>
           </Flex>
         </VStack>
-        <Image
-          src="smile_blueshirt.jpg"
-          boxShadow="xl"
-          w={500}
-          objectFit="cover"
-          alt="federico picture"
-          borderRadius={20}
-        />
       </Flex>
     </>
   );
