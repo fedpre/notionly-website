@@ -10,7 +10,7 @@ type TestimonialCardProps = {
 };
 
 const fetchTestimonials = async () => {
-  const fetchData = await fetch(`${process.env.BASE_URL}/api/testimonials`);
+  const fetchData = await fetch(`${process.env.BASE_URL}api/testimonials`);
   return await fetchData.json();
 };
 
