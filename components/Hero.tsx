@@ -55,12 +55,15 @@ export default function Hero() {
             I&apos;m a software engineer, YouTuber, and Notion architect.
           </Text>
           <Text
-            fontSize="2xl"
+            fontSize="3xl"
             py={5}
             textAlign={{ base: 'center', md: 'left' }}
           >
-            I help businesses create systems to increase productivity. Also, I
-            create awesome templates in Notion!
+            I run Notionly, a consulting agency to help people be more
+            productive with Notion!
+          </Text>
+          <Text fontSize="2xl" textAlign={{ base: 'center', md: 'left' }}>
+            Also, I create awesome templates in Notion!
           </Text>
           <Flex
             py={5}

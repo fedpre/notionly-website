@@ -1,6 +1,13 @@
 'use client';
 import { CacheProvider } from '@chakra-ui/next-js';
-import { CloseIcon, HamburgerIcon, MoonIcon, DownloadIcon, ChevronRightIcon } from '@chakra-ui/icons';
+import {
+  CloseIcon,
+  HamburgerIcon,
+  MoonIcon,
+  DownloadIcon,
+  ChevronRightIcon,
+  StarIcon,
+} from '@chakra-ui/icons';
 import {
   Container,
   ChakraProvider,
@@ -38,12 +45,12 @@ import {
   CardHeader,
   CardFooter,
 } from '@chakra-ui/react';
-export { 
-  Container, 
-  ChakraProvider, 
-  ColorModeScript, 
-  Box, 
-  Text, 
+export {
+  Container,
+  ChakraProvider,
+  ColorModeScript,
+  Box,
+  Text,
   CacheProvider,
   extendTheme,
   type ThemeConfig,
@@ -80,4 +87,5 @@ export {
   CardHeader,
   CardFooter,
   ChevronRightIcon,
+  StarIcon,
 };
