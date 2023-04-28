@@ -78,15 +78,11 @@ export default function Hero() {
               borderRadius={20}
             />
           </Flex>
-          <Text
-            fontSize="3xl"
-            py={5}
-            textAlign={{ base: 'center', md: 'left' }}
-          >
+          <Text fontSize="3xl" py={5} textAlign="center" w="100%">
             I run Notionly, a consulting agency to help people be more
             productive with Notion!
           </Text>
-          <Text fontSize="2xl" textAlign={{ base: 'center', md: 'left' }}>
+          <Text fontSize="2xl" textAlign="center" w="100%">
             Also, I create awesome templates in Notion!
           </Text>
           <Flex
@@ -96,14 +92,12 @@ export default function Hero() {
               md: 'row',
             }}
             justifyContent="center"
-            alignItems={{
-              base: 'flex-start',
-              md: 'center',
-            }}
+            alignItems='center'
             gap={{
               base: 6,
               md: 0,
             }}
+            w='100%'
           >
             <Link as={NextLink} href="/service">
               <Button
@@ -111,7 +105,10 @@ export default function Hero() {
                 w={250}
                 boxShadow="xl"
                 size="lg"
-                marginRight={5}
+                marginRight={{
+                  base: 0,
+                  md: 5
+                }}
                 rightIcon={<ChevronRightIcon boxSize={8} />}
               >
                 Learn More
